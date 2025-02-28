@@ -1,0 +1,17 @@
+The commands git pull and git fetch are both used to sync your local repository with the remote repository, but they work differently. Understanding their differences is crucial for managing your code and collaborating effectively with others. Here’s a breakdown:
+git fetch
+What it does:
+git fetch downloads the latest changes from the remote repository to your local machine, but it does not merge them into your working directory or the current branch.
+It only updates the remote-tracking branches (e.g., origin/main, origin/feature-branch) with the changes from the remote repository.
+You use git fetch when you want to check for updates from the remote repository without affecting your working directory. It allows you to inspect the changes before deciding to merge them into your branch.
+
+
+git pull
+What it does:
+
+git pull is a combination of git fetch and git merge. First, it fetches the changes from the remote repository, then it merges those changes into your current branch.
+This command directly updates your working directory and local branch with the latest changes from the remote branch.
+When to use:
+
+You use git pull when you are ready to automatically update your current branch with the latest changes from the remote repository.
+It’s commonly used when you’re ready to incorporate others' work into your own branch.
